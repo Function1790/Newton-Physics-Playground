@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <canvas id="canvas" width="800" height="800"></canvas>
-        <script src="script.js"></script>
-    </body>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="root flex-col">
+        <div class="canvas-wrap">
+            <canvas id="canvas" width="600" height="600"></canvas>
+        </div>
+        <div class="flex-row">
+            <div class="input-area flex-col">
+                <div class="input-wrap flex-row">
+                    <div class="name">생성질량</div>
+                    <input id="mass" type="number" value="10">
+                </div>
+                <div class="input-wrap">
+                    <div class="name">중력상수</div>
+                    <input id="gravity" type="number" value="1">
+                </div>
+                <div class="input-wrap">
+                    <div class="name">생성전하량</div>
+                    <input id="charge" type="number" value="1">
+                </div>
+                <div class="input-wrap">
+                    <div class="name">전기력상수</div>
+                    <input id="electric" type="number" value="1">
+                </div>
+            </div>
+            <div class="input-area flex-col">
+                <div class="input-wrap">
+                    <div class="name">진행중 : </div>
+                    <div id="time">true</div>
+                </div>
+                <div class="input-wrap">
+                    <div class="name">고정 : </div>
+                    <div id="pin">false</div>
+                </div>
+                <div class="input-wrap">
+                    <div class="name">탄성 : </div>
+                    <div id="elastic">false</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
